@@ -1,7 +1,7 @@
 CC = clang
 CFLAGS = -Wall -Wextra -g -std=c99
 TARGET = bin/main
-SRC = src/main.c 
+SRC = $(wildcard src/*.c)
 
 all: $(TARGET)
 
